@@ -1,0 +1,32 @@
+{
+  "name": "simple-my-vue",
+  "version": "1.0.0",
+  "description": "## 参考",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xuhongliWeb/simple-my-vue.git"
+  },
+  "author": "xu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xuhongliWeb/simple-my-vue/issues"
+  },
+  "homepage": "https://github.com/xuhongliWeb/simple-my-vue#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.15.0",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4"
+  }
+}
