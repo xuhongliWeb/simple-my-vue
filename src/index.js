@@ -95,7 +95,7 @@ myVue.prototype._compile = function (root) {
             node.onclick = (function () {
                 var attrVal = nodes[i].getAttribute('v-click');
                 console.log(attrVal, '---attrVal')
-                return _this.$methods[attrVal].bind(_this.$data)
+                return _this.$methods[attrVal].bind(_this.$data) // 使作用域保持一致
             })()
         }
 
@@ -144,3 +144,18 @@ var app = new myVue({
 })
 
 // console.log(app.$data.number = 3, '--------')
+
+
+// bind 
+
+window.x = 10
+var model = {
+    x: 22,
+    getX: function(){
+        return this.x
+    }
+}
+
+var m =  model.getX.bind(model)
+console.log('bind', model.getX())
+console.log('m',m())
